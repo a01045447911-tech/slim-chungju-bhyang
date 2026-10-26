@@ -1,0 +1,631 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="ko" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>슬림마케팅(SLIMMARKETING) | 소상공인 홈페이지 제작</title>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Noto+Sans+KR:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface": "#0B1320",
+            "background": "#0B1320",
+            "surface-dim": "#080E18",
+            "surface-bright": "#1E2C44",
+            "surface-container-lowest": "#070D16",
+            "surface-container-low": "#0F1A2C",
+            "surface-container": "#141F30",
+            "surface-container-high": "#18263D",
+            "surface-container-highest": "#21324E",
+            "primary": "#F3C973",
+            "primary-container": "#D4AF37",
+            "on-primary": "#0B1320",
+            "secondary": "#E5B869",
+            "on-secondary": "#0B1320",
+            "on-surface": "#F1F5F9",
+            "on-surface-variant": "#94A3B8",
+            "on-background": "#F1F5F9",
+            "outline": "#334155",
+            "outline-variant": "#1E293B",
+            "gold-accent": "#D4AF37",
+            "gold-light": "#FDE68A",
+            "gold-dark": "#997320",
+            "error": "#F87171"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "md": "0.375rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "2xl": "1rem",
+            "full": "9999px"
+          },
+          "fontFamily": {
+            "sans": ["Plus Jakarta Sans", "Noto Sans KR", "sans-serif"]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+      font-family: 'Plus Jakarta Sans', 'Noto Sans KR', sans-serif;
+    }
+    details summary::-webkit-details-marker {
+      display: none;
+    }
+  </style>
+</head>
+<body class="bg-[#0B1320] text-[#F1F5F9] antialiased selection:bg-[#E5B869] selection:text-[#0B1320] min-h-screen">
+<!-- SECTION 1: MOBILE HEADER (Transparent / Glassmorphism over Hero) -->
+<header class="sticky top-0 z-50 flex items-center justify-between w-full h-15 px-4 max-w-lg mx-auto bg-[#0B1320]/80 backdrop-blur-md border-b border-[#1E293B]/70">
+<div class="flex items-center gap-2.5">
+<button aria-label="메뉴 열기" class="p-1.5 text-[#94A3B8] hover:text-[#E5B869] hover:bg-[#141F30] transition-colors rounded-lg" type="button">
+<span class="material-symbols-outlined align-middle text-[22px]">menu</span>
+</button>
+<a class="text-[17px] font-extrabold tracking-tight text-[#F1F5F9]" href="#">
+      SLIM<span class="text-[#E5B869]">MARKETING</span>
+</a>
+</div>
+<div class="flex items-center">
+<a class="inline-flex items-center justify-center px-3 py-1.5 bg-[#E5B869] text-[#0B1320] rounded-md font-bold text-xs tracking-tight shadow-sm hover:bg-[#F3C973] active:scale-95 transition-all" href="#consultation-form">
+      시안 신청
+    </a>
+</div>
+</header>
+<!-- SECTION 2: HERO (Full-bleed Mobile Optimized Hero with IMAGE_3 and Deep Navy Gradient) -->
+<section class="relative w-full max-w-lg mx-auto min-h-[85vh] flex flex-col justify-end px-5 pt-10 pb-9 text-center border-b border-[#D4AF37]/20 overflow-hidden">
+<!-- Full-Width Background with IMAGE_3 & Deep Navy Multi-stop Overlay -->
+<div class="absolute inset-0 -z-10 overflow-hidden"><img alt="슬림마케팅 프리미엄 오피스 배경" class="w-full h-full object-cover object-center" src="https://lh3.googleusercontent.com/aida/AEtjO1UUaxCE-4BDv2baWWH8TTsAGgkLMhqOtTLiRLFpFKj-t1m6KkJJB6AiyPZMJ1BXdFC03fGag-CVfa9XegWdls-zcwkPHaHWoexFmzs6Dko7wtRR8wn3wFP0Wx6UUX1SEQQz0ql6It01M95pzxuJvT3H15DULsmGhwJxvV3K2kjTvlbcstNYbIbdVwkBDvIjDHQZX5-2l4SOATJVp7Ecr3IWUnp3p1UK1vMjGRcbrbUd9I3U_vV3n5Sz"><div class="absolute inset-0 bg-gradient-to-b from-[#0B1320]/50 via-transparent to-[#0B1320]"></div><div class="absolute inset-0 bg-gradient-to-t from-[#0B1320] via-transparent to-transparent opacity-80"></div></div>
+<div class="flex flex-col items-center my-auto pt-6">
+<!-- Top Gold Badge -->
+<div class="inline-flex items-center gap-1.5 px-3.5 py-1.5 bg-[#141F30]/90 backdrop-blur-md border border-[#D4AF37]/45 rounded-full text-[#E5B869] font-semibold text-xs mb-5 shadow-lg shadow-black/40">
+<span class="material-symbols-outlined text-[15px] text-[#E5B869]">verified</span>
+<span class="">소상공인·자영업자 맞춤 홈페이지</span>
+</div>
+<!-- Main Headline with Gold Emphasis -->
+<h1 class="text-[2.35rem] leading-[2.95rem] font-extrabold tracking-tight text-[#F1F5F9] mb-3.5 drop-shadow-md">예쁜 디자인 말고,<br><span class="text-[#D4AF37] font-black">문의오는 홈페이지.</span></h1>
+<!-- Subcopy -->
+<p class="text-[1.05rem] leading-snug text-[#E2E8F0] font-medium mb-5 drop-shadow">
+      사장님 사업에 꼭 필요한 홈페이지, <span class="text-[#FDE68A] font-bold">19만원부터</span>.
+    </p>
+<!-- Trust 3-Point Mini Bar -->
+<div class="w-full max-w-xs flex items-center justify-around py-2.5 px-3 rounded-xl bg-[#0F1A2C]/85 backdrop-blur-md border border-[#1E293B]/80 mb-6 text-[11px] text-[#CBD5E1] shadow-md">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-[#E5B869]">verified_user</span>
+<span class="">선결제 0원</span>
+</div>
+<span class="text-[#334155]">•</span>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-[#E5B869]">touch_app</span>
+<span class="">아임웹 손쉬운 관리</span>
+</div>
+<span class="text-[#334155]">•</span>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-[#E5B869]">bolt</span>
+<span class="">3일 신속 런칭</span>
+</div>
+</div>
+<!-- Full-width Gold CTA Button -->
+<a class="w-full h-14 bg-gradient-to-r from-[#E5B869] via-[#F3C973] to-[#D4AF37] text-[#0B1320] font-extrabold text-base rounded-xl flex items-center justify-center gap-2 shadow-xl shadow-[#D4AF37]/25 hover:opacity-95 active:scale-[0.98] transition-all" href="#consultation-form">
+<span class="">무료 첫 화면 시안 신청하기</span>
+<span class="material-symbols-outlined text-[20px] font-bold">arrow_forward</span>
+</a>
+<p class="text-[11px] text-[#94A3B8] mt-2.5">※ 작업 착수 전 계약금 요구나 결제를 강요하지 않습니다.</p>
+</div>
+</section>
+<main class="w-full max-w-lg mx-auto px-4 pt-10 pb-12 flex flex-col gap-10">
+<!-- SECTION 3: PROBLEM SOLVING (Vertical 3 Cards) -->
+<section class="w-full flex flex-col gap-4">
+<div class="text-center mb-1">
+<span class="text-[11px] font-bold tracking-widest text-[#E5B869] uppercase">REAL PROBLEM &amp; SOLUTION</span>
+<h2 class="text-xl font-bold text-[#F1F5F9] mt-1">소상공인 사장님의 답답함을 압니다</h2>
+<p class="text-xs text-[#94A3B8] mt-1">화려한 그래픽보다 실질적인 매출 전환과 운영 편의가 우선입니다.</p>
+</div>
+<div class="flex flex-col gap-3.5">
+<!-- Card 1 -->
+<div class="bg-[#141F30] border border-[#1E293B] hover:border-[#D4AF37]/40 p-5 rounded-xl flex flex-col justify-between transition-all shadow-md">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="text-2xl font-black text-[#E5B869]">01</span>
+<div class="w-9 h-9 rounded-lg bg-[#0F1A2C] border border-[#1E293B] flex items-center justify-center">
+<span class="material-symbols-outlined text-[#E5B869] text-xl">payments</span>
+</div>
+</div>
+<h3 class="text-base font-bold text-[#F1F5F9] mb-1.5">부담스러운 제작 비용</h3>
+<p class="text-xs leading-relaxed text-[#94A3B8]">
+            수백만 원 견적 대신 불필요한 거품을 덜어내고, 우리 매장과 회사에 꼭 필요한 핵심 기능만 실속형으로 구성합니다.
+          </p>
+</div>
+<div class="mt-4 pt-3 border-t border-[#1E293B] flex items-center gap-1.5 text-xs font-semibold text-[#FDE68A]">
+<span class="">→</span>
+<span class="">거품 뺀 19만원대 합리적 시작</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-[#141F30] border border-[#1E293B] hover:border-[#D4AF37]/40 p-5 rounded-xl flex flex-col justify-between transition-all shadow-md">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="text-2xl font-black text-[#E5B869]">02</span>
+<div class="w-9 h-9 rounded-lg bg-[#0F1A2C] border border-[#1E293B] flex items-center justify-center">
+<span class="material-symbols-outlined text-[#E5B869] text-xl">smartphone</span>
+</div>
+</div>
+<h3 class="text-base font-bold text-[#F1F5F9] mb-1.5">막막한 유지관리</h3>
+<p class="text-xs leading-relaxed text-[#94A3B8]">
+            코딩이나 개발자 없이도 사장님이 직접 스마트폰과 컴퓨터로 사진 교체와 텍스트 수정을 블로그처럼 손쉽게 운영합니다.
+          </p>
+</div>
+<div class="mt-4 pt-3 border-t border-[#1E293B] flex items-center gap-1.5 text-xs font-semibold text-[#FDE68A]">
+<span class="">→</span>
+<span class="">100% 사장님 직접 제어 가능 (아임웹 기반)</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-[#141F30] border border-[#1E293B] hover:border-[#D4AF37]/40 p-5 rounded-xl flex flex-col justify-between transition-all shadow-md">
+<div>
+<div class="flex items-center justify-between mb-3">
+<span class="text-2xl font-black text-[#E5B869]">03</span>
+<div class="w-9 h-9 rounded-lg bg-[#0F1A2C] border border-[#1E293B] flex items-center justify-center">
+<span class="material-symbols-outlined text-[#E5B869] text-xl">call</span>
+</div>
+</div>
+<h3 class="text-base font-bold text-[#F1F5F9] mb-1.5">문의로 안 이어지는 디자인</h3>
+<p class="text-xs leading-relaxed text-[#94A3B8]">
+            단순히 예쁜 사이트가 아닌 고객 시선 동선에 맞춘 원클릭 전화걸기, 카카오톡 상담, 실시간 견적 접수 전환 중심 설계입니다.
+          </p>
+</div>
+<div class="mt-4 pt-3 border-t border-[#1E293B] flex items-center gap-1.5 text-xs font-semibold text-[#FDE68A]">
+<span class="">→</span>
+<span class="">즉각적인 실시간 영업 리드 창출</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: PRODUCT & PRICING -->
+<section class="w-full flex flex-col gap-4">
+<div class="text-center mb-1">
+<span class="text-[11px] font-bold tracking-widest text-[#E5B869] uppercase">CLEAR PRICING</span>
+<h2 class="text-xl font-bold text-[#F1F5F9] mt-1">투명하고 합리적인 서비스 플랜</h2>
+<p class="text-xs text-[#94A3B8] mt-1">두 플랜 모두 선결제 없이 첫 화면 무료 시안부터 제작해 드립니다.</p>
+</div>
+<div class="flex flex-col gap-4">
+<!-- Plan 1: Starter -->
+<div class="bg-[#141F30] border border-[#1E293B] p-5 rounded-xl flex flex-col shadow-md">
+<div class="flex justify-between items-start mb-3">
+<div>
+<span class="text-[11px] font-medium text-[#94A3B8]">초기 창업 / 매장 알림용</span>
+<h3 class="text-lg font-bold text-[#F1F5F9]">STARTER 템플릿형</h3>
+</div>
+<div class="text-right">
+<span class="text-[11px] text-[#64748B] line-through block">350,000원</span>
+<span class="text-xl font-extrabold text-[#F1F5F9]">19만원</span>
+</div>
+</div>
+<ul class="space-y-2 text-xs text-[#CBD5E1] mb-5 border-t border-[#1E293B] pt-3.5">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[17px] text-[#E5B869]">check</span>
+<span class="">신속한 론칭 (3일 내 제작 완료)</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[17px] text-[#E5B869]">check</span>
+<span class="">원페이지 실속형 필수 정보 압축 구성</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[17px] text-[#E5B869]">check</span>
+<span class="">모바일·스마트폰 화면 100% 최적화</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[17px] text-[#E5B869]">check</span>
+<span class="">기본 문의 폼 &amp; 카카오톡 채널 연동</span>
+</li>
+</ul>
+<a class="w-full py-3 bg-[#18263D] border border-[#1E293B] text-[#CBD5E1] font-semibold rounded-lg text-center text-xs hover:border-[#D4AF37]/50 hover:text-[#FDE68A] transition-colors" href="#consultation-form">
+          STARTER 무료 시안 신청
+        </a>
+</div>
+<!-- Plan 2: Business (Recommended - Gold Border Highlight) -->
+<div class="bg-[#18263D] border-2 border-[#D4AF37] p-5 rounded-xl flex flex-col relative shadow-xl shadow-[#D4AF37]/10">
+<div class="absolute -top-3 right-4 bg-gradient-to-r from-[#E5B869] to-[#D4AF37] text-[#0B1320] px-2.5 py-0.5 rounded-full text-[11px] font-extrabold shadow-md">
+          추천 Best 플랜
+        </div>
+<div class="flex justify-between items-start mb-3 mt-1">
+<div>
+<span class="text-[11px] font-semibold text-[#E5B869]">고객 설득 &amp; 매출 집중형</span>
+<h3 class="text-lg font-bold text-[#F1F5F9]">BUSINESS 업종 맞춤형</h3>
+</div>
+<div class="text-right">
+<span class="text-[11px] text-[#64748B] line-through block">850,000원</span>
+<span class="text-2xl font-black text-[#FDE68A]">59만원</span>
+</div>
+</div>
+<ul class="space-y-2 text-xs text-[#CBD5E1] mb-5 border-t border-[#1E293B] pt-3.5">
+<li class="flex items-center gap-2 font-medium text-[#F1F5F9]">
+<span class="material-symbols-outlined text-[17px] text-[#E5B869]">check_circle</span>
+<span class="">업종별 심층 카피라이팅 및 구조 기획</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[17px] text-[#E5B869]">check</span>
+<span class="">맞춤형 세부 접수폼 &amp; 실시간 알림 연동</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[17px] text-[#E5B869]">check</span>
+<span class="">네이버 웹마스터도구 &amp; 지도 검색등록 지원</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[17px] text-[#E5B869]">check</span>
+<span class="">대표 브랜드 아이덴티티 및 모바일 전용 UI</span>
+</li>
+</ul>
+<a class="w-full py-3.5 bg-gradient-to-r from-[#E5B869] to-[#D4AF37] text-[#0B1320] font-bold rounded-lg text-center text-xs tracking-wide shadow-md hover:opacity-95 active:scale-[0.98] transition-all" href="#consultation-form">
+          BUSINESS 맞춤 무료 시안 신청
+        </a>
+</div>
+</div>
+</section>
+<!-- SECTION 5: NOVEMBER PROMOTION BANNER -->
+<section class="w-full">
+<div class="bg-gradient-to-br from-[#18263D] via-[#141F30] to-[#0F1A2C] p-5 rounded-xl border border-[#D4AF37]/50 flex flex-col gap-3.5 relative overflow-hidden shadow-lg">
+<div class="absolute -right-8 -bottom-8 w-28 h-28 bg-[#D4AF37]/10 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 bg-[#D4AF37] text-[#0B1320] rounded text-[10px] font-extrabold uppercase">11월 특별 프로모션</span>
+<span class="text-xs text-[#E5B869] font-semibold">한정 혜택</span>
+</div>
+<div>
+<h3 class="text-base font-bold text-[#F1F5F9] mb-1">네이버 지도 등록 &amp; SEO 최적화 무료 지원</h3>
+<p class="text-xs leading-relaxed text-[#94A3B8]">
+          제작 완료 후 포트폴리오 등록 및 간단 피드백 동의 시,<br>
+<strong class="text-[#FDE68A] font-semibold">‘네이버 검색등록 &amp; 고급 다이렉트 문의 접수 위젯(15만원 상당)’</strong>을 무상 세팅해 드립니다.
+        </p>
+</div>
+<a class="w-full py-2.5 bg-[#D4AF37] text-[#0B1320] font-bold text-center text-xs rounded-lg hover:bg-[#F3C973] transition-colors" href="#consultation-form">
+        프로모션 조건으로 신청하기
+      </a>
+</div>
+</section>
+<!-- SECTION 6: PORTFOLIO SHOWCASE (3-Card Stack for Mobile) -->
+<section class="w-full flex flex-col gap-3.5">
+<div class="text-center mb-1">
+<span class="text-[11px] font-bold tracking-widest text-[#E5B869] uppercase">PORTFOLIO CASE STUDY</span>
+<h2 class="text-xl font-bold text-[#F1F5F9] mt-1">제작 사례 쇼케이스</h2>
+<p class="text-[11px] text-[#64748B]">※ 디자인 완성도 참고를 위한 가상 기획 포트폴리오 사례입니다.</p>
+</div>
+<div class="flex flex-col gap-4">
+<!-- Case 1: 온담 스테이 -->
+<div class="bg-[#141F30] border border-[#1E293B] rounded-xl overflow-hidden shadow-lg hover:border-[#D4AF37]/40 transition-all">
+<div class="relative w-full aspect-[16/10] bg-[#0F1A2C] overflow-hidden">
+<img alt="온담 스테이 제작 사례 화면" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmArRs01MNJm7b3SaI_N9ZieaMvZvcqtNKN5D9EUTU1eqsOndr4h85zOioB-7GxQ8zbLKFSYaceemtQpzYAXxyPJ8p7iV1RSWzpvPMrFF3IIMgncbio9dDfi-gJekrIF3FiQD6FvjFmt6KNGOQDakkBYMo4EgFZQPHfRysxJc3cn1BDzBpWDc329jhNuzth21VHnnJEVhvL8Ehuo6R1QCGWuzWg-ELqwLlVhKanTFFxIEKVqzcvKM">
+<div class="absolute top-3 left-3 bg-[#0B1320]/85 backdrop-blur-md text-[#E5B869] px-2.5 py-1 rounded-md text-[11px] font-bold border border-[#D4AF37]/35">
+        감성 한옥 스테이
+      </div>
+</div>
+<div class="p-4 flex flex-col gap-3">
+<div class="flex items-center justify-between border-b border-[#1E293B] pb-3">
+<div>
+<h3 class="text-base font-bold text-[#F1F5F9]">온담 스테이 (Ondam Stay)</h3>
+<p class="text-xs text-[#94A3B8]">감성적인 숙소 무드 &amp; 직관적 실시간 예약 연결</p>
+</div>
+<span class="text-[10px] text-[#E5B869] bg-[#0F1A2C] border border-[#1E293B] px-2 py-1 rounded font-semibold whitespace-nowrap">
+          제작 4일
+        </span>
+</div>
+<!-- Spec Badges -->
+<div class="grid grid-cols-2 gap-2 text-center">
+<div class="p-2.5 bg-[#0F1A2C] rounded-lg border border-[#1E293B]">
+<span class="text-[10px] text-[#64748B] block">전환 포인트</span>
+<span class="text-xs font-bold text-[#FDE68A]">실시간 예약 연동</span>
+</div>
+<div class="p-2.5 bg-[#0F1A2C] rounded-lg border border-[#1E293B]">
+<span class="text-[10px] text-[#64748B] block">모바일 최적화</span>
+<span class="text-xs font-bold text-[#FDE68A]">100% 모바일 터치 중심</span>
+</div>
+</div>
+<p class="text-xs leading-relaxed text-[#94A3B8]">
+        복잡한 수수료 대신, 인스타그램과 네이버에서 유입되어 즉시 객실을 확인하고 바로 예약 상담으로 연결되는 미니멀 감성 스테이 구조입니다.
+      </p>
+</div>
+</div>
+<!-- Case 2: 몽브레 (프리미엄 베이커리) -->
+<div class="bg-[#141F30] border border-[#1E293B] rounded-xl overflow-hidden shadow-lg hover:border-[#D4AF37]/40 transition-all">
+<div class="relative w-full aspect-[16/10] bg-[#0F1A2C] overflow-hidden">
+<img alt="몽브레 베이커리 제작 사례 화면" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWU1G41W632I9TOXVH0QGOD7YCK0a7_ZHpDtFOuNfn21_Oki7LfRYPsy_5H43q-iJOAV784_VFtUxxievzF_MWhZsCQVHVWIKKBApSXxe_HnCDkJGL8mG_X1y_ozaCFdx0dFwGwPwErU14Ql8aExAwNgtQVHF8I_TnKdpg1T2WZboYj2orFdjYnMq6vSFq1dyamRPtTGXLbD0ZOLpA1tQH0p-ItHpXu0-8RU6sAu-1otykerNee1U">
+<div class="absolute top-3 left-3 bg-[#0B1320]/85 backdrop-blur-md text-[#E5B869] px-2.5 py-1 rounded-md text-[11px] font-bold border border-[#D4AF37]/35">
+        수제 베이커리 카페
+      </div>
+</div>
+<div class="p-4 flex flex-col gap-3">
+<div class="flex items-center justify-between border-b border-[#1E293B] pb-3">
+<div>
+<h3 class="text-base font-bold text-[#F1F5F9]">몽브레 (Mont-Bred)</h3>
+<p class="text-xs text-[#94A3B8]">당일 생산 라인업 쇼케이스 &amp; 픽업 예약</p>
+</div>
+<span class="text-[10px] text-[#E5B869] bg-[#0F1A2C] border border-[#1E293B] px-2 py-1 rounded font-semibold whitespace-nowrap">
+          제작 3일
+        </span>
+</div>
+<!-- Spec Badges -->
+<div class="grid grid-cols-2 gap-2 text-center">
+<div class="p-2.5 bg-[#0F1A2C] rounded-lg border border-[#1E293B]">
+<span class="text-[10px] text-[#64748B] block">핵심 기능</span>
+<span class="text-xs font-bold text-[#FDE68A]">메뉴 쇼케이스</span>
+</div>
+<div class="p-2.5 bg-[#0F1A2C] rounded-lg border border-[#1E293B]">
+<span class="text-[10px] text-[#64748B] block">전환 포인트</span>
+<span class="text-xs font-bold text-[#FDE68A]">카카오톡 주문 연동</span>
+</div>
+</div>
+<p class="text-xs leading-relaxed text-[#94A3B8]">
+        전화 주문 실수와 배달앱 수수료 문제를 줄이고, 단골 고객이 당일 구운 빵 라인업을 모바일로 즉시 확인해 카카오 채널로 간편 픽업 주문할 수 있게 구축했습니다.
+      </p>
+</div>
+</div>
+<!-- Case 3: 라온 디자인 (인테리어 스튜디오) -->
+<div class="bg-[#141F30] border border-[#1E293B] rounded-xl overflow-hidden shadow-lg hover:border-[#D4AF37]/40 transition-all">
+<div class="relative w-full aspect-[16/10] bg-[#0F1A2C] overflow-hidden">
+<img alt="라온 디자인 제작 사례 화면" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpv7-9m35r_QOOOnYHrrJJWO1WfwAAO2Opsu-kfEKwkBZ543f6HEblBzf0SJEYMbB3NavvweX-RiQhW5_d17dvy6iuj0-EXk6lfxyvjna4mR_Zgo8NncWDAw0Cl1msh8RtuQ8qgBssC-HWmAuTDFNZzeQRKVUhkXw_jiBpwGOp6JetBWY3L_22NybMWgVAittRG44W7VEJDl0DWmc0MZDCpTXydcRrPg6uYYrh-rtVQhx2lGmJ3rc">
+<div class="absolute top-3 left-3 bg-[#0B1320]/85 backdrop-blur-md text-[#E5B869] px-2.5 py-1 rounded-md text-[11px] font-bold border border-[#D4AF37]/35">
+        인테리어 디자인 스튜디오
+      </div>
+</div>
+<div class="p-4 flex flex-col gap-3">
+<div class="flex items-center justify-between border-b border-[#1E293B] pb-3">
+<div>
+<h3 class="text-base font-bold text-[#F1F5F9]">라온 디자인 (Raon Design)</h3>
+<p class="text-xs text-[#94A3B8]">평형대별 시공 포트폴리오 &amp; 간편 견적 산출</p>
+</div>
+<span class="text-[10px] text-[#E5B869] bg-[#0F1A2C] border border-[#1E293B] px-2 py-1 rounded font-semibold whitespace-nowrap">
+          제작 5일
+        </span>
+</div>
+<!-- Spec Badges -->
+<div class="grid grid-cols-2 gap-2 text-center">
+<div class="p-2.5 bg-[#0F1A2C] rounded-lg border border-[#1E293B]">
+<span class="text-[10px] text-[#64748B] block">비주얼 신뢰</span>
+<span class="text-xs font-bold text-[#FDE68A]">시공 갤러리</span>
+</div>
+<div class="p-2.5 bg-[#0F1A2C] rounded-lg border border-[#1E293B]">
+<span class="text-[10px] text-[#64748B] block">전환 포인트</span>
+<span class="text-xs font-bold text-[#FDE68A]">원클릭 전화·견적 문의</span>
+</div>
+</div>
+<p class="text-xs leading-relaxed text-[#94A3B8]">
+        사장님이 시공 사진을 모바일로 즉시 등록할 수 있으며, 잠재 고객이 평형과 예산을 선택해 원클릭으로 정밀 견적 문의를 남길 수 있는 실전 비즈니스 템플릿입니다.
+      </p>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 7: 5-STEP PRODUCTION PROCESS -->
+<section class="w-full flex flex-col gap-3.5">
+<div class="text-center mb-1">
+<span class="text-[11px] font-bold tracking-widest text-[#E5B869] uppercase">SYSTEMATIC PROCESS</span>
+<h2 class="text-xl font-bold text-[#F1F5F9] mt-1">부담 없는 5단계 제작 과정</h2>
+<p class="text-xs text-[#94A3B8] mt-1">결제 전 첫 화면 시안을 먼저 보여드리고 시작합니다.</p>
+</div>
+<div class="flex flex-col gap-2.5">
+<!-- Step 1 -->
+<div class="flex items-start gap-3.5 p-3.5 bg-[#141F30] border border-[#1E293B] rounded-xl">
+<div class="w-8 h-8 shrink-0 bg-[#0F1A2C] border border-[#1E293B] text-[#CBD5E1] rounded-lg flex items-center justify-center text-xs font-bold">
+          01
+        </div>
+<div>
+<h3 class="text-xs font-bold text-[#F1F5F9]">STEP 01. 정보 접수</h3>
+<p class="text-[11px] text-[#94A3B8] mt-0.5">상호명, 업종, 취급 품목 및 원하시는 분위기/참고 사이트를 간편 접수합니다.</p>
+</div>
+</div>
+<!-- Step 2 (Highlight) -->
+<div class="flex items-start gap-3.5 p-3.5 bg-[#18263D] border border-[#D4AF37]/60 rounded-xl relative shadow-md">
+<div class="w-8 h-8 shrink-0 bg-[#D4AF37] text-[#0B1320] rounded-lg flex items-center justify-center text-xs font-extrabold">
+          02
+        </div>
+<div>
+<div class="flex items-center gap-1.5">
+<h3 class="text-xs font-bold text-[#FDE68A]">STEP 02. 무료 첫 화면 시안</h3>
+<span class="bg-[#D4AF37]/20 border border-[#D4AF37]/40 text-[#FDE68A] text-[9px] px-1.5 py-0.5 rounded font-bold">비용 없음</span>
+</div>
+<p class="text-[11px] text-[#CBD5E1] mt-0.5">결제 전 우리 사업체의 메인 화면 디자인을 먼저 확인하여 퀄리티를 사전에 검증합니다.</p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="flex items-start gap-3.5 p-3.5 bg-[#141F30] border border-[#1E293B] rounded-xl">
+<div class="w-8 h-8 shrink-0 bg-[#0F1A2C] border border-[#1E293B] text-[#CBD5E1] rounded-lg flex items-center justify-center text-xs font-bold">
+          03
+        </div>
+<div>
+<h3 class="text-xs font-bold text-[#F1F5F9]">STEP 03. 승인 및 계약</h3>
+<p class="text-[11px] text-[#94A3B8] mt-0.5">시안 디자인이 마음에 드셨을 때 비로소 정식 작업을 승인하고 계약을 진행합니다.</p>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="flex items-start gap-3.5 p-3.5 bg-[#141F30] border border-[#1E293B] rounded-xl">
+<div class="w-8 h-8 shrink-0 bg-[#0F1A2C] border border-[#1E293B] text-[#CBD5E1] rounded-lg flex items-center justify-center text-xs font-bold">
+          04
+        </div>
+<div>
+<h3 class="text-xs font-bold text-[#F1F5F9]">STEP 04. 아임웹 실시간 제작</h3>
+<p class="text-[11px] text-[#94A3B8] mt-0.5">스마트폰, 태블릿, PC 등 모든 기기에서 완벽 작동하도록 전체 페이지를 구축합니다.</p>
+</div>
+</div>
+<!-- Step 5 -->
+<div class="flex items-start gap-3.5 p-3.5 bg-[#141F30] border border-[#1E293B] rounded-xl">
+<div class="w-8 h-8 shrink-0 bg-[#0F1A2C] border border-[#1E293B] text-[#CBD5E1] rounded-lg flex items-center justify-center text-xs font-bold">
+          05
+        </div>
+<div>
+<h3 class="text-xs font-bold text-[#F1F5F9]">STEP 05. 검수 및 납품</h3>
+<p class="text-[11px] text-[#94A3B8] mt-0.5">소유권을 100% 이전해 드리고, 사장님이 직접 수정하실 수 있는 쉬운 매뉴얼을 전수합니다.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 8: ABOUT / TRUST BUILDER -->
+<section class="w-full">
+<div class="bg-[#141F30] border border-[#1E293B] p-5 rounded-xl shadow-md">
+<div class="flex items-center gap-3.5 mb-4">
+<div class="w-12 h-12 rounded-xl bg-gradient-to-br from-[#E5B869] to-[#D4AF37] text-[#0B1320] flex items-center justify-center font-black text-base shadow-sm">
+          SM
+        </div>
+<div>
+<span class="text-[10px] font-bold text-[#E5B869] tracking-wider uppercase">SLIMMARKETING FOUNDER</span>
+<h3 class="text-sm font-bold text-[#F1F5F9]">22년 사업 현장 경험의 실전 감각</h3>
+</div>
+</div>
+<blockquote class="p-3.5 bg-[#0F1A2C] border-l-2 border-[#D4AF37] rounded-r-lg text-xs text-[#FDE68A] font-medium italic mb-4 leading-relaxed">
+        “기술 자랑이 아닌, 고객이 진짜 사고 싶어 하는 구조를 만듭니다.”
+      </blockquote>
+<div class="space-y-2.5 text-xs text-[#94A3B8] leading-relaxed">
+<p class="">화려한 특수효과와 어려운 개발 용어로 견적만 높이는 웹 에이전시에 지치셨습니까?</p>
+<p class="">슬림마케팅은 불필요한 비용을 과감히 덜어내고, 소상공인 사장님의 사업 모델에 맞춘 핵심 정보 전달과 전화·상담 문의 전환율에만 집중합니다.</p>
+<p class="">사장님이 나중에 글 하나 고칠 때마다 외주 비용을 낼 필요 없도록, 유지보수가 가장 쉬운 아임웹 시스템으로 정직하게 납품합니다.</p>
+</div>
+</div>
+</section>
+<!-- SECTION 9: FAQ -->
+<section class="w-full flex flex-col gap-3.5">
+<div class="text-center mb-1">
+<span class="text-[11px] font-bold tracking-widest text-[#E5B869] uppercase">FREQUENTLY ASKED</span>
+<h2 class="text-xl font-bold text-[#F1F5F9] mt-1">자주 묻는 질문</h2>
+<p class="text-xs text-[#94A3B8] mt-1">궁금하신 내용을 명확하고 투명하게 알려드립니다.</p>
+</div>
+<div class="flex flex-col gap-2.5">
+<!-- FAQ 1 -->
+<details class="group bg-[#141F30] border border-[#1E293B] rounded-xl open:border-[#D4AF37]/50 transition-all">
+<summary class="flex items-center justify-between p-4 cursor-pointer list-none text-xs font-bold text-[#F1F5F9] select-none">
+<span class="">Q. 제작 기간은 얼마나 걸리나요?</span>
+<span class="material-symbols-outlined text-[#E5B869] group-open:rotate-180 transition-transform duration-200 text-lg">expand_more</span>
+</summary>
+<div class="px-4 pb-4 text-xs leading-relaxed text-[#94A3B8] border-t border-[#1E293B] pt-3">
+          기본 정보 접수 후 24~48시간 이내에 첫 화면 무료 시안을 보내드립니다. 시안 승인 후 잔여 작업은 평균 3~5 영업일 이내에 최종 완료됩니다.
+        </div>
+</details>
+<!-- FAQ 2 -->
+<details class="group bg-[#141F30] border border-[#1E293B] rounded-xl open:border-[#D4AF37]/50 transition-all">
+<summary class="flex items-center justify-between p-4 cursor-pointer list-none text-xs font-bold text-[#F1F5F9] select-none">
+<span class="">Q. 수정은 몇 번까지 가능한가요?</span>
+<span class="material-symbols-outlined text-[#E5B869] group-open:rotate-180 transition-transform duration-200 text-lg">expand_more</span>
+</summary>
+<div class="px-4 pb-4 text-xs leading-relaxed text-[#94A3B8] border-t border-[#1E293B] pt-3">
+          무료 시안 단계에서 피드백 1회 반영이 가능하며, 정식 계약 후 본 작업 과정에서 텍스트 및 이미지 교체 등 2회의 무상 수정 검수를 제공합니다.
+        </div>
+</details>
+<!-- FAQ 3 -->
+<details class="group bg-[#141F30] border border-[#1E293B] rounded-xl open:border-[#D4AF37]/50 transition-all">
+<summary class="flex items-center justify-between p-4 cursor-pointer list-none text-xs font-bold text-[#F1F5F9] select-none">
+<span class="">Q. 도메인과 아임웹 유지비용은 어떻게 되나요?</span>
+<span class="material-symbols-outlined text-[#E5B869] group-open:rotate-180 transition-transform duration-200 text-lg">expand_more</span>
+</summary>
+<div class="px-4 pb-4 text-xs leading-relaxed text-[#94A3B8] border-t border-[#1E293B] pt-3">
+          웹호스팅은 아임웹의 공식 호스팅 요금제(월 1~2만원대, 연간 결제 시 할인)를 직접 아임웹에 결제하시며, 도메인은 1년 약 2만원 선의 실비만 발생합니다. 슬림마케팅은 별도의 숨은 월 관리비를 요구하지 않습니다.
+        </div>
+</details>
+<!-- FAQ 4 -->
+<details class="group bg-[#141F30] border border-[#1E293B] rounded-xl open:border-[#D4AF37]/50 transition-all">
+<summary class="flex items-center justify-between p-4 cursor-pointer list-none text-xs font-bold text-[#F1F5F9] select-none">
+<span class="">Q. 제작 후 직접 수정할 수 있나요?</span>
+<span class="material-symbols-outlined text-[#E5B869] group-open:rotate-180 transition-transform duration-200 text-lg">expand_more</span>
+</summary>
+<div class="px-4 pb-4 text-xs leading-relaxed text-[#94A3B8] border-t border-[#1E293B] pt-3">
+          네, 100% 가능합니다. 소유권을 고객님 계정으로 완전히 이전해 드리며, 초보자도 블로그 작성하듯 글과 사진을 바꾸실 수 있는 5분 핵심 가이드 영상을 함께 제공합니다.
+        </div>
+</details>
+</div>
+</section>
+<!-- SECTION 10: CONSULTATION FORM -->
+<section class="w-full pt-2" id="consultation-form">
+<div class="bg-[#141F30] border border-[#D4AF37]/40 p-5 rounded-2xl shadow-xl">
+<div class="text-center mb-6">
+<span class="inline-block px-3 py-0.5 bg-[#0F1A2C] border border-[#D4AF37]/40 rounded-full text-[#E5B869] font-medium text-[11px] mb-2">
+          선결제 0원 · 부담없는 확인
+        </span>
+<h2 class="text-xl font-bold text-[#F1F5F9]">무료 첫 화면 시안 신청</h2>
+<p class="text-xs text-[#94A3B8] mt-1">접수해 주시면 내용을 확인한 후 시안 일정과 초안을 신속히 안내해 드립니다.</p>
+</div>
+<form class="space-y-4" onsubmit="event.preventDefault(); alert('신청이 정상 접수되었습니다. 담당자가 순차적으로 확인 후 연락드리겠습니다.');">
+<!-- Business Name -->
+<div>
+<label class="block text-xs font-semibold text-[#CBD5E1] mb-1.5" for="bizName">
+            상호명 (사업체 이름) <span class="text-[#E5B869]">*</span>
+</label>
+<input class="w-full bg-[#0F1A2C] border border-[#1E293B] rounded-lg px-3.5 py-3 text-xs text-[#F1F5F9] placeholder:text-[#475569] focus:border-[#D4AF37] focus:ring-1 focus:ring-[#D4AF37] focus:outline-none transition-colors" id="bizName" placeholder="예: 슬림베이커리, 온담인테리어" required="" type="text">
+</div>
+<!-- Phone Number -->
+<div>
+<label class="block text-xs font-semibold text-[#CBD5E1] mb-1.5" for="contactPhone">
+            연락처 (휴대전화 번호) <span class="text-[#E5B869]">*</span>
+</label>
+<input class="w-full bg-[#0F1A2C] border border-[#1E293B] rounded-lg px-3.5 py-3 text-xs text-[#F1F5F9] placeholder:text-[#475569] focus:border-[#D4AF37] focus:ring-1 focus:ring-[#D4AF37] focus:outline-none transition-colors" id="contactPhone" placeholder="예: 010-1234-5678" required="" type="tel">
+</div>
+<!-- Industry -->
+<div>
+<label class="block text-xs font-semibold text-[#CBD5E1] mb-1.5" for="industry">
+            업종 / 분야 <span class="text-[#E5B869]">*</span>
+</label>
+<input class="w-full bg-[#0F1A2C] border border-[#1E293B] rounded-lg px-3.5 py-3 text-xs text-[#F1F5F9] placeholder:text-[#475569] focus:border-[#D4AF37] border focus:ring-1 focus:ring-[#D4AF37] focus:outline-none transition-colors" id="industry" placeholder="예: 카페/베이커리, 펜션, 세무사, 인테리어 시공" required="" type="text">
+</div>
+<!-- Plan Selection Radio -->
+<div>
+<span class="block text-xs font-semibold text-[#CBD5E1] mb-2">
+            희망 플랜 선택 <span class="text-[#E5B869]">*</span>
+</span>
+<div class="grid grid-cols-1 gap-2.5">
+<label class="flex items-center gap-3 p-3 bg-[#0F1A2C] border border-[#1E293B] rounded-lg cursor-pointer hover:border-[#D4AF37]/50 transition-colors">
+<input checked="" class="text-[#D4AF37] focus:ring-[#D4AF37] bg-[#141F30] border-[#334155]" name="plan" type="radio" value="starter">
+<div class="flex-1 flex justify-between items-center">
+<span class="text-xs font-bold text-[#F1F5F9]">STARTER (19만원)</span>
+<span class="text-[11px] text-[#94A3B8]">원페이지 실속형</span>
+</div>
+</label>
+<label class="flex items-center gap-3 p-3 bg-[#18263D] border border-[#D4AF37]/60 rounded-lg cursor-pointer transition-colors">
+<input class="text-[#D4AF37] focus:ring-[#D4AF37] bg-[#141F30] border-[#334155]" name="plan" type="radio" value="business">
+<div class="flex-1 flex justify-between items-center">
+<span class="text-xs font-bold text-[#FDE68A]">BUSINESS (59만원)</span>
+<span class="text-[11px] text-[#E5B869] font-semibold">업종 맞춤형 (추천)</span>
+</div>
+</label>
+</div>
+</div>
+<!-- Privacy Agreement -->
+<div class="flex items-start gap-2 pt-1">
+<input checked="" class="mt-0.5 rounded text-[#D4AF37] focus:ring-[#D4AF37] bg-[#0F1A2C] border-[#334155]" id="privacy" required="" type="checkbox">
+<label class="text-[11px] leading-tight text-[#94A3B8]" for="privacy">
+            [필수] 무료 시안 제작 상담 및 안내를 위한 개인정보 수집·이용에 동의합니다.
+          </label>
+</div>
+<!-- Submit Button -->
+<button class="w-full py-4 bg-gradient-to-r from-[#E5B869] via-[#F3C973] to-[#D4AF37] text-[#0B1320] font-extrabold text-base rounded-xl shadow-lg shadow-[#D4AF37]/20 hover:opacity-95 active:scale-[0.98] transition-all mt-3" type="submit">
+          무료 첫 화면 시안 신청하기
+        </button>
+</form>
+</div>
+</section>
+</main>
+<!-- MOBILE FOOTER (Imweb Style) -->
+<footer class="w-full py-8 px-4 max-w-lg mx-auto bg-[#070D16] border-t border-[#1E293B] text-[11px] text-[#64748B] flex flex-col gap-4">
+<div class="flex flex-col gap-1.5">
+<h4 class="text-sm font-bold text-[#CBD5E1]">SLIMMARKETING</h4>
+<p class="leading-relaxed">소상공인을 위한 거품 없는 정직한 웹사이트 구축 솔루션</p>
+</div>
+<div class="flex flex-wrap gap-x-3 gap-y-1 text-[#94A3B8] border-y border-[#1E293B]/70 py-2.5">
+<a class="hover:text-[#E5B869] transition-colors" href="#">이용약관</a>
+<span class="text-[#334155]">|</span>
+<a class="hover:text-[#E5B869] transition-colors" href="#">개인정보처리방침</a>
+<span class="text-[#334155]">|</span>
+<a class="hover:text-[#E5B869] transition-colors" href="#">사업자정보확인</a>
+<span class="text-[#334155]">|</span>
+<a class="text-[#E5B869] font-medium" href="#consultation-form">무료 시안 신청</a>
+</div>
+<div class="space-y-1 leading-normal">
+<p class="">상호명: 슬림마케팅(SLIMMARKETING) | 대표자: 관리자</p>
+<p class="">사업 분야: 소상공인 아임웹 전문 제작 컨설팅 및 구축 지원</p>
+<p class="text-[#475569] pt-1">© 2024 SLIMMARKETING. 보이는 것부터, 팔리게. All rights reserved.</p>
+</div>
+</footer>
+
+
+</body></html>

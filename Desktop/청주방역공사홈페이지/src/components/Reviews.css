@@ -1,0 +1,75 @@
+.reviews {
+  padding: var(--spacing-2xl) 0;
+  background-color: var(--white);
+}
+
+.reviews .section-header {
+  margin-bottom: var(--spacing-2xl);
+}
+
+.reviews-placeholder {
+  background: linear-gradient(135deg, #f5f9ff 0%, #e8f2ff 100%);
+  border: 2px dashed var(--primary-color);
+  border-radius: 12px;
+  padding: var(--spacing-2xl);
+  text-align: center;
+  animation: fadeUp 0.6s ease-out;
+}
+
+.placeholder-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.placeholder-icon {
+  font-size: 3rem;
+  margin-bottom: var(--spacing-lg);
+}
+
+.reviews-placeholder h3 {
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-md);
+  font-size: 1.5rem;
+}
+
+.reviews-placeholder p {
+  color: var(--text-light);
+  line-height: 1.8;
+  margin-bottom: var(--spacing-lg);
+  font-size: 0.95rem;
+}
+
+.reviews-placeholder small {
+  display: block;
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+  .reviews {
+    padding: var(--spacing-xl) 0;
+  }
+
+  .reviews-placeholder {
+    padding: var(--spacing-xl);
+  }
+
+  .reviews-placeholder h3 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .reviews-placeholder {
+    padding: var(--spacing-lg);
+  }
+
+  .placeholder-icon {
+    font-size: 2rem;
+  }
+
+  .reviews-placeholder p {
+    font-size: 0.9rem;
+  }
+}

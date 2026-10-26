@@ -1,0 +1,121 @@
+.services {
+  padding: var(--spacing-2xl) 0;
+  background-color: var(--white);
+}
+
+.services .section-header {
+  margin-bottom: var(--spacing-2xl);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.service-card {
+  background-color: var(--white);
+  border: 1px solid var(--light-gray);
+  border-radius: 12px;
+  padding: var(--spacing-lg);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+  animation: fadeUp 0.6s ease-out forwards;
+  opacity: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 102, 204, 0.15);
+  border-color: var(--primary-color);
+}
+
+.service-icon {
+  font-size: 2.5rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.service-card h3 {
+  font-size: 1.25rem;
+  color: var(--text-dark);
+  margin-bottom: var(--spacing-md);
+}
+
+.service-content {
+  flex-grow: 1;
+  margin-bottom: var(--spacing-lg);
+}
+
+.service-item {
+  margin-bottom: var(--spacing-lg);
+}
+
+.service-item:last-child {
+  margin-bottom: 0;
+}
+
+.service-item label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.5rem;
+}
+
+.service-item p {
+  font-size: 0.95rem;
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+.btn-service {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.btn-service:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .services {
+    padding: var(--spacing-xl) 0;
+  }
+
+  .services-grid {
+    gap: var(--spacing-md);
+  }
+
+  .service-card {
+    padding: var(--spacing-md);
+  }
+
+  .service-icon {
+    font-size: 2rem;
+  }
+
+  .service-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .service-item p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
